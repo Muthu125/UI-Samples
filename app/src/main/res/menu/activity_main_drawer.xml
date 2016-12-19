@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ripple_effect"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Ripple Effect"/>
+        <item
+            android:id="@+id/sliding_drawer"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sliding Drawer"/>
+        <item
+            android:id="@+id/spinner_adapter"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Spinner Adapter"/>
+        <item
+            android:id="@+id/section_listview"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Section ListView"/>
+        <item
+            android:id="@+id/progress_animation"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Progress Animation"/>
+        <item
+            android:id="@+id/polygon_animation"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Animation Polygon"/>
+        <item
+            android:id="@+id/table_fix_header"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Table FixHeader"/>
+        <item
+            android:id="@+id/dashed_text_underline"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Dashed Text underline"/>
+        <item
+            android:id="@+id/pager_sliding_tab"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Pager Sliding Tab"/>
+        <item
+            android:id="@+id/decimal_font"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Decimal Font"/>
+        <item
+            android:id="@+id/title_drag_layout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Title Drag Layout"/>
+        <item
+            android:id="@+id/chart_interval"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Chart Interval Wheel"/>
+        <item
+            android:id="@+id/price_wheel"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Price Wheel"/>
+        <item
+            android:id="@+id/account_progress"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Account Progress"/>
+        <item
+            android:id="@+id/menu_back_arrow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Menu Back Arrow"/>
+        <item
+            android:id="@+id/edittext_spinner"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Edit Text &amp; Spinner"/>
+        <item
+            android:id="@+id/shake_animation_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Shake Animation list"/>
+        <item
+            android:id="@+id/bubble_view"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Bubble View"/>
+        <item
+            android:id="@+id/arc_menu"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Arc Menu"/>
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>-->
+
+</menu>
