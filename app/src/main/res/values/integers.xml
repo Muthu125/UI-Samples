@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="loader_morphing_time">250</integer>
+    <integer name="loader_color_changing_time">250</integer>
+    <integer name="loader_morphing_lesser_time">0</integer>
+    <integer name="loader_wait_time">0</integer>
+</resources>

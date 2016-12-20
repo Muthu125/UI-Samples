@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="744.09448819dp"
+    android:height="1052.3622047dp"
+    android:viewportWidth="744.09448819"
+    android:viewportHeight="1052.3622047">
+
+    <path
+        android:name="base"
+        android:fillColor="#016837"
+        android:strokeWidth="1"
+        android:pathData="@string/bull_base_path" />
+    <path
+        android:name="face"
+        android:fillColor="#019345"
+        android:strokeWidth="1"
+        android:pathData="@string/bull_face_path" />
+    <path
+        android:name="face_front"
+        android:fillColor="#00af00"
+        android:strokeWidth="1"
+        android:pathData="@string/bull_face_front_path" />
+    <path
+        android:name="eyes"
+        android:fillColor="#333333"
+        android:strokeWidth="1"
+        android:pathData="@string/bull_eyes_path" />
+
+    <path
+        android:name="nose"
+        android:fillColor="#333333"
+        android:strokeWidth="1"
+        android:pathData="@string/bull_nose_path" />
+
+</vector>
