@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="With Ruppee Symbol"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/rupee_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="12,899.78"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="Without Ruppee Symbol"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/no_rupee_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="28dp"
+        android:text="10,500.45"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"/>
+
+</LinearLayout>

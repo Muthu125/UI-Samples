@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_bear_complete">
+   <target
+        android:name="base"
+        android:animation="@anim/bear_to_bull_base_transition" />
+    <target
+        android:name="face"
+        android:animation="@anim/bear_to_bull_face_transition" />
+    <target
+        android:name="face_front"
+        android:animation="@anim/bear_to_bull_face_front_transition" />
+    <target
+        android:name="eyes"
+        android:animation="@anim/bear_to_bull_eyes_transition" />
+    <target
+        android:name="nose"
+        android:animation="@anim/bear_to_bull_nose_transition" />
+</animated-vector>
