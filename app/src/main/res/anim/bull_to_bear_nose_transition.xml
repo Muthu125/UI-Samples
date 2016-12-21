@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <objectAnimator
+        android:duration="@integer/loader_color_changing_time"
+        android:propertyName="fillColor"
+        android:valueFrom="#030200"
+        android:valueTo="#030200"
+        android:startOffset="@integer/loader_wait_time"
+        />
+    <objectAnimator
+        android:duration="@integer/loader_morphing_time"
+        android:propertyName="pathData"
+        android:valueType="pathType"
+        android:valueFrom="@string/bull_nose_path"
+        android:valueTo="@string/bear_nose_path"
+        android:startOffset="@integer/loader_wait_time"  />
+
+</set>

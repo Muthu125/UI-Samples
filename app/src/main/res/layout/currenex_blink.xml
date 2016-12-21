@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+   <!-- <LinearLayout
+        android:id="@+id/filterRemoveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.msf.ui.button.MSFButton
+            android:id="@+id/hoursRemoveBtn"
+            android:layout_width="fill_parent" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/alerts_filter_item_bg"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/close"
+            android:textSize="@dimen/listview_header_textsize"
+            android:visibility="gone" />
+
+        <com.msf.ui.button.MSFButton
+            android:id="@+id/tradeRemoveBtn"
+            android:layout_width="fill_parent" android:layout_weight="1"
+            android:layout_margin="3dp"  android:layout_height="wrap_content"
+            android:background="@drawable/alerts_filter_item_bg"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/close"
+            android:textSize="@dimen/listview_header_textsize" android:text=""
+            android:visibility="gone" />
+
+        <com.msf.ui.button.MSFButton
+            android:id="@+id/pairRemoveBtn"
+            android:layout_width="fill_parent" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/alerts_filter_item_bg"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/close"
+            android:textSize="@dimen/listview_header_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/active_orders_headers" />
+
+    <include layout="@layout/error_layout" />-->
+
+    <ListView
+        android:id="@+id/doneTradeListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <!--<include layout="@layout/donetradebottom" />-->
+
+</LinearLayout>

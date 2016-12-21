@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <objectAnimator
+        android:duration="@integer/loader_color_changing_time"
+        android:propertyName="fillColor"
+        android:valueFrom="#016837"
+        android:valueTo="#c2272d"
+        android:startOffset="@integer/loader_wait_time"
+        />
+    <objectAnimator
+        android:duration="@integer/loader_morphing_time"
+        android:propertyName="pathData"
+        android:valueFrom="@string/bull_base_path"
+        android:valueTo="@string/bear_base_path"
+        android:startOffset="@integer/loader_wait_time"
+        android:valueType="pathType"
+         />
+
+
+</set>

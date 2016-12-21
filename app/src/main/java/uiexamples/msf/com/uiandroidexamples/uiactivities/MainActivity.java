@@ -15,7 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import uiexamples.msf.com.uiandroidexamples.R;
-import uiexamples.msf.com.uiandroidexamples.adapters.DecimalFormatText;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -95,6 +94,8 @@ public class MainActivity extends AppCompatActivity
             intent.putExtra("RECEIVED", "PROGRESS_ANIMATION");
             startActivity(intent);
         } else if (id == R.id.polygon_animation) {
+            startActivity(new Intent(this, PolygonAnimation.class));
+        } else if (id == R.id.quick_search) {
             startActivity(new Intent(this, QuickSearchAction.class));
         }
 

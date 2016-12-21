@@ -23,6 +23,7 @@
         <activity android:name=".uiactivities.SpinnerAdapterUI" />
         <activity android:name=".uiactivities.DecimalTextView" />
         <activity android:name=".uiactivities.QuickSearchAction"/>
+        <activity android:name=".uiactivities.PolygonAnimation" />
     </application>
 
 </manifest>

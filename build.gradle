@@ -15,8 +15,18 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            credentials {
+                username "android-groups"
+                password "m@venadm!n"
+            }
+            url 'http://mvn-repo.marketsimplified.com/artifactory/msf-android-int-libs'
+        }
     }
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

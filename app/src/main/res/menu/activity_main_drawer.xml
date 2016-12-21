@@ -23,9 +23,13 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Progress Animation"/>
         <item
-            android:id="@+id/polygon_animation"
+            android:id="@+id/quick_search"
             android:icon="@drawable/ic_menu_manage"
             android:title="Quick Search"/>
+        <item
+            android:id="@+id/polygon_animation"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Polygon Animation"/>
         <item
             android:id="@+id/table_fix_header"
             android:icon="@drawable/ic_menu_slideshow"

@@ -30,5 +30,6 @@ dependencies {
     compile 'com.android.support:design:25.0.1'
     testCompile 'junit:junit:4.12'
     compile(group: 'android', name: 'UI', version: '1.6.2', ext: 'aar')
+    compile(group: 'android', name: 'Utils', version: '2.1.4', ext: 'aar')
 
 }

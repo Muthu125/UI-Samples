@@ -8,7 +8,7 @@
     <string name="AE_RUPEES_SYMBOL">\u20B9</string>
 
     <color name="lite_gray">#a3a3a3</color>
-
+    <dimen name="creditsFontSize">16sp</dimen>
 
 
 
