@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/quickscrollOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.msf.ui.listview.MSFListView
+        android:id="@+id/filteredListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:visibility="visible"
+        >
+    </com.msf.ui.listview.MSFListView>
+
+    <RelativeLayout
+        android:id="@+id/textViewCenterCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/filteredListView"
+        android:layout_alignRight="@+id/filteredListView"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/quickscroll_floating_textview_bg"
+        android:visibility="invisible">
+
+        <com.msf.ui.textview.MSFTextView
+            android:id="@+id/textViewCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            >
+        </com.msf.ui.textview.MSFTextView>
+    </RelativeLayout>
+</RelativeLayout>

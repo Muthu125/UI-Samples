@@ -25,7 +25,7 @@
         <item
             android:id="@+id/polygon_animation"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Animation Polygon"/>
+            android:title="Quick Search"/>
         <item
             android:id="@+id/table_fix_header"
             android:icon="@drawable/ic_menu_slideshow"

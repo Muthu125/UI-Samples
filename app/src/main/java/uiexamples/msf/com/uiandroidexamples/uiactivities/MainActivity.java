@@ -94,12 +94,10 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, DecimalTextView.class);
             intent.putExtra("RECEIVED", "PROGRESS_ANIMATION");
             startActivity(intent);
-        } /*else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.polygon_animation) {
+            startActivity(new Intent(this, QuickSearchAction.class));
         }
-*/
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
