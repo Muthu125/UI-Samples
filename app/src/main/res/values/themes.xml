@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SmartTrader" parent="Theme.AppCompat.Light">
+
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#e5e5</item>
+        <item name="colorAccent">#E6E6E6</item>
+
+    </style>
+
+
+    <style name="greenButton" parent="Widget.AppCompat.Button.Colored">
+
+
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#e5e5</item>
+        <item name="colorAccent">#f38e3a</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorButtonNormal">#f38e3a</item>
+
+
+    </style>
+</resources>
