@@ -10,6 +10,43 @@
     <color name="lite_gray">#a3a3a3</color>
     <dimen name="creditsFontSize">16sp</dimen>
 
+    <!-- Menu names -->
+    <string name="business_card">Business Card</string>
+    <string name="calendar">Calendar</string>
+    <string name="cloud">Cloud</string>
+    <string name="facebook">Facebook</string>
+    <string name="key">Key</string>
+    <string name="mail">Mail</string>
+    <string name="profile">Profile</string>
+    <string name="tag">Tag</string>
+    <string name="voice_search">Voice Search</string>
+    <!-- Toasts -->
+
+    <string-array name="arrays">
+        <item name="adsadasd">sdasdasa</item>
+        <item name="adsadasd">sdasdasa</item>
+        <item name="adsadasd">sdasdasa</item>
+    </string-array>
+
+    <string name="start_app">Starting application:</string>
+    <string name="center_click">Center has been clicked</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="normal">Switch to normal mode</string>
+    <string name="pie">Switch to pie mode</string>
+    <string name="normalWidthRange">Switch to normal mode with angleRange</string>
+
+
+
+    <!-- Main list items -->
+    <string name="main_sample">Price wheel</string>
+    <string name="main_fast">Chart Interval wheel</string>
+    <string name="main_no_rotation">No rotation</string>
+    <string name="main_west">Orientation to west</string>
+    <string name="main_background">Circle menu with background</string>
+    <string name="main_7_icons">7 Icons</string>
+    <string name="main_8_icons">8 Icons</string>
 
 
     <string name="bear_base_path">M 360.848,534.412 L 296.706,328.325 L 424.307,327.679 L 360.848,534.412 M 360.848,534.412 L 424.307,327.679 M 424.307,327.679 L 467.295,343.192 L 360.848,534.412 M 360.848,534.412 L 360.848,534.412 L 296.706,328.325 L 254.4,343.192 M 254.4,343.192 L 360.848,534.412 L 360.848,534.412 M 360.848,534.412 L 360.848,534.412 L 536.213,423.992 L 467.295,343.192 M 467.295,343.192 L 360.848,534.412 M 254.4,343.192 L 254.4,343.192 L 360.848,534.412 L 185.482,423.992 L 254.4,343.192 M 188.894,618.557 L 188.894,618.557 L 185.482,423.992 L 360.848,534.412 L 188.894,618.557 M 188.894,618.557 M 360.848,534.411 L 360.848,534.411 L 536.213,423.991 L 533.484,618.556 L 360.848,534.411 M 360.848,752.361 L 188.894,618.557 L 360.848,534.412 L 360.848,752.361 M 360.848,534.411 L 360.848,752.361 L 533.484,618.556 L 360.848,534.411 M 571.696,347.717 L 571.696,347.717 L 536.213,423.992 M 536.213,423.992 L 467.295,343.192 L 571.696,347.717 L 571.696,347.717 M 571.696,347.717 L 467.295,343.192 M 467.295,343.192 L 536.896,315.397 L 571.696,347.717 M 149.999,347.717 L 149.999,347.717 L 185.482,423.992 L 254.4,343.192 M 254.4,343.192 L 149.999,347.717 M 149.999,347.717 L 149.999,347.717 L 254.4,343.192 M 254.4,343.192 L 254.4,343.192 L 254.4,343.192 L 254.4,343.192 M 254.4,343.192 L 254.4,343.192 L 254.4,343.192 L 184.799,315.397 L 149.999,347.717 </string>

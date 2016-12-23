@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug$Generated" generated="true"><source path="D:\Workspace\UI Samples\circleMenuLib\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="D:\Workspace\UI Samples\circleMenuLib\src\androidTest\res"/><source path="D:\Workspace\UI Samples\circleMenuLib\build\generated\res\rs\androidTest\debug"/><source path="D:\Workspace\UI Samples\circleMenuLib\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet config="debug" from-dependency="true" generated-set="debug$Generated"><source path="D:\Workspace\UI Samples\circleMenuLib\build\intermediates\bundles\debug\res"><file path="D:\Workspace\UI Samples\circleMenuLib\build\intermediates\bundles\debug\res\values\values.xml" qualifiers=""><declare-styleable name="ChartWheelController"><attr format="integer" name="circleBackground"/><attr name="firstChildPosition">
+            <enum name="East" value="0"/>
+            <enum name="South" value="90"/>
+            <enum name="West" value="180"/>
+            <enum name="North" value="270"/>
+        </attr><attr format="boolean" name="isRotating"/><attr format="integer" name="speed"/></declare-styleable><declare-styleable name="CircleImageView"><attr format="string" name="name"/></declare-styleable></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\Workspace\UI Samples\circleMenuLib\src\androidTest\res"/><source path="D:\Workspace\UI Samples\circleMenuLib\build\generated\res\rs\androidTest\debug"/><source path="D:\Workspace\UI Samples\circleMenuLib\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CircleImageView"><attr format="string" name="name"/></declare-styleable><declare-styleable name="ChartWheelController"><attr format="integer" name="circleBackground"/><attr name="firstChildPosition">
+            <enum name="East" value="0"/>
+            <enum name="South" value="90"/>
+            <enum name="West" value="180"/>
+            <enum name="North" value="270"/>
+        </attr><attr format="boolean" name="isRotating"/><attr format="integer" name="speed"/></declare-styleable></configuration></mergedItems></merger>

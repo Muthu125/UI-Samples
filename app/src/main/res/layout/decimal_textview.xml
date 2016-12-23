@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
 
     <TextView
+        android:id="@+id/text1_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -24,6 +26,7 @@
         android:textSize="25dp"/>
 
     <TextView
+        android:id="@+id/text2_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -41,5 +44,17 @@
         android:text="10,500.45"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp"/>
+
+    <uiexamples.msf.com.uiandroidexamples.adapters.AccountProgressCircle
+        android:id="@+id/account_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:mpc_stroke_width="10dp"/>
+    <!--app:mpc_percent="1"-->
+    <!--app:mpc_start_color="@color/my_account_circle_green_start"
+     app:mpc_end_color="@color/my_account_circle_green_start"-->
+
 
 </LinearLayout>

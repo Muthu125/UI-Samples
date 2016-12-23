@@ -3,4 +3,20 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!--my accounts-->
+    <color name="my_account_circle_default_rim">#444545</color>
+    <color name="my_account_equity_text">#b6b6b6</color>
+    <color name="my_account_header">#282a2b</color>
+    <color name="my_account_balance_bg">#161719</color>
+    <color name="my_account_header_text">#b3b3b3</color>
+    <color name="my_account_positive">#02c014</color>
+    <color name="my_account_negative">#ff0d00</color>
+    <color name="my_account_bg">#282a2b</color>
+    <color name="my_account_bottom_text">#adadad</color>
+    <color name="my_account_circle_green_start">#9cc849</color>
+    <color name="my_account_circle_green_end">#83b149</color>
+    <color name="my_account_circle_red_start">#f38e3a</color>
+    <color name="my_account_circle_red_end">#ea2f2e</color>
 </resources>

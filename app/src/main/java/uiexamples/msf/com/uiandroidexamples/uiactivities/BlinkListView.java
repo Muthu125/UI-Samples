@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.msf.ui.adapter.MSFCommonAdapter;
 import com.msf.ui.adapter.MSFPopulationListener;
+import com.msf.ui.textview.MSFTextView;
 import com.msf.util.statistics.MSFStatistics;
 
 import java.util.ArrayList;
@@ -31,33 +33,7 @@ public class BlinkListView extends Activity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.currenex_blink);
-    }
-
-    private void setUpViews(View view) {
-
-        doneTradesListView = (ListView) view
-                .findViewById(R.id.doneTradeListView);
-
-        /*setUpHeader();*/
-
-    }
-
-   /* @Override
-    protected void proceed() {
-        super.proceed();
-        setUpController();
-    }*/
-
-  /*  private void setUpHeader() {
-        row1Header1.setText(getString(DT_CURRENCY_PAIR_LBL));
-        row1Header2.setText(getString(DT_AMOUNT_LBL));
-        row1Header3.setText(getString(DT_AT_RATE_LBL));
-        row2Header1.setText(getString(DT_TRADE_ID_LBL));
-        row2Header2.setText(getString(DT_TRADE_TIME_LBL));
-        row2Header3.setText(getString(DT_USER_LBL));
-    }*/
-
-    private void setUpController() {
+        doneTradesListView = (ListView)findViewById(R.id.doneTradeListView);
         moveMinXWidth = MSFStatistics.getWidth(this) * 7 / 100;
         moveMaxXWidth = MSFStatistics.getWidth(this) * 15 / 100;
         moveAniXWidth = MSFStatistics.getWidth(this) * 3 / 100;
@@ -89,6 +65,7 @@ public class BlinkListView extends Activity  {
         setUpListAdapter(sampleList);
     }
 
+
     private String oldOrderId = "";
 
 
@@ -115,8 +92,8 @@ public class BlinkListView extends Activity  {
                         //  if(movedViews.contains()
 
 //                v.clearAnimation();
-
-                       // hashMap.put(position, v);
+                        ((TextView)views[0]).setText(row);
+                        //hashMap.put(position, v);
 
 
                         if(movedPos.size() > 0) {

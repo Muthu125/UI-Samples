@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import uiexamples.msf.com.uiandroidexamples.R;
+import uiexamples.msf.com.uiandroidexamples.adapters.SampleActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -93,10 +94,24 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, DecimalTextView.class);
             intent.putExtra("RECEIVED", "PROGRESS_ANIMATION");
             startActivity(intent);
+        } else if (id == R.id.account_progress) {
+            Intent intent = new Intent(this, DecimalTextView.class);
+            intent.putExtra("RECEIVED", "PROGRESS_ACCOUNT");
+            startActivity(intent);
         } else if (id == R.id.polygon_animation) {
             startActivity(new Intent(this, PolygonAnimation.class));
         } else if (id == R.id.quick_search) {
             startActivity(new Intent(this, QuickSearchAction.class));
+        } else if (id == R.id.blink_list) {
+            startActivity(new Intent(this, BlinkListView.class));
+        } else if (id == R.id.chart_interval) {
+            Intent intent = new Intent(this, CircleSampleActivity.class);
+            intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample_fast);
+            startActivity(intent);
+        } else if (id == R.id.price_wheel) {
+            Intent intent = new Intent(this, CircleSampleActivity.class);
+            intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

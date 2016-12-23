@@ -17,5 +17,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:text="UI Examples in Android Projects \n Click on the menu"/>
 </RelativeLayout>

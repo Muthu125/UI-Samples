@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="uiexamples.msf.com.uiandroidexamples">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +31,9 @@
         <activity android:name=".uiactivities.DecimalTextView" />
         <activity android:name=".uiactivities.QuickSearchAction"/>
         <activity android:name=".uiactivities.PolygonAnimation" />
+        <activity android:name=".uiactivities.BlinkListView" />
+        <activity android:name=".uiactivities.CircleSampleActivity" />
+        <activity android:name=".uiactivities.CircleMainActivity" />
     </application>
 
 </manifest>
