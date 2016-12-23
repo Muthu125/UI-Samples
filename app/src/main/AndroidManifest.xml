@@ -34,6 +34,7 @@
         <activity android:name=".uiactivities.BlinkListView" />
         <activity android:name=".uiactivities.CircleSampleActivity" />
         <activity android:name=".uiactivities.CircleMainActivity" />
+        <activity android:name=".uiactivities.SectionListView" />
     </application>
 
 </manifest>

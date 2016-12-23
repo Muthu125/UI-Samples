@@ -2,6 +2,7 @@ package uiexamples.msf.com.uiandroidexamples.uiactivities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -28,6 +29,8 @@ public class BlinkListView extends Activity  {
     private MSFCommonAdapter<String> doneTradesCommonAdapter;
     private int moveMaxXWidth, moveMinXWidth, moveAniXWidth;
     private LinkedList<Integer> movedPos=new LinkedList<Integer>();
+    private int swipeListViewPos;
+    private boolean checkSwipeAction = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,9 +80,9 @@ public class BlinkListView extends Activity  {
         doneTradesCommonAdapter.setLayoutTextViews(
                 R.layout.filter_list_row, viewIDs);
 
-        doneTradesCommonAdapter.setAlternativeRowColor(
-                getResources().getColor(R.color.colorPrimary),
-                getResources().getColor(R.color.colorAccent));
+      /*  doneTradesCommonAdapter.setAlternativeRowColor(
+                getResources().getColor(R.color.my_account_bg),
+                getResources().getColor(R.color.colorAccent));*/
 
         doneTradesCommonAdapter
                 .setPopulationListener(new MSFPopulationListener<String>() {
@@ -149,7 +152,60 @@ public class BlinkListView extends Activity  {
     }
 
 
+    View.OnTouchListener gestureListener = new View.OnTouchListener() {
+        private int padding = 0;
+        private int initialx = 0;
+        private int currentx = 0;
 
+        public boolean onTouch(View v, MotionEvent event) {
+
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                checkSwipeAction = false;
+                padding = 0;
+                initialx = (int) event.getX();
+                currentx = (int) event.getX();
+            }
+            if (event.getAction() == MotionEvent.ACTION_MOVE) {
+                currentx = (int) event.getX();
+                padding = currentx - initialx;
+            }
+
+            if (event.getAction() == MotionEvent.ACTION_UP
+                    || event.getAction() == MotionEvent.ACTION_CANCEL) {
+
+                if (checkSwipeAction) {
+                    swipeListViewPos = doneTradesListView.getPositionForView(v);
+                   // if (!checkFilterFlag)
+                        //setUpSwipeAnimationAdpter(swipeListViewPos);
+                }
+
+                padding = 0;
+                initialx = 0;
+                currentx = 0;
+            }
+
+            int curPosition = doneTradesListView.getPositionForView(v);
+
+            if (initialx > currentx) {
+                if (padding < -30 && padding < 0 && movedPos.contains(curPosition)) {
+                    checkSwipeAction = true;
+                    remainingListViewAnimation(v,curPosition);
+                    //removeNetAmountDisplay(curPosition);
+
+                }
+            } else {
+
+                if (padding > 20) {
+                    if ((!movedPos.contains(curPosition))) {
+                        selectListViewAnimation(v,curPosition);
+                        //showNetAmountDisplay(curPosition);
+                    }
+                    checkSwipeAction = true;
+                }
+            }
+            return true;
+        }
+    };
 
 }
 

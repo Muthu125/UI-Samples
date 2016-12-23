@@ -74,10 +74,10 @@
             android:id="@+id/edittext_spinner"
             android:icon="@drawable/ic_menu_manage"
             android:title="Edit Text &amp; Spinner"/>-->
-        <!--<item
+        <item
             android:id="@+id/shake_animation_list"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Shake Animation list"/>-->
+            android:title="Shake Animation list"/>
     <!--    <item
             android:id="@+id/bubble_view"
             android:icon="@drawable/ic_menu_slideshow"

@@ -27,14 +27,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -112,6 +104,14 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, CircleSampleActivity.class);
             intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample);
             startActivity(intent);
+        } else if (id == R.id.price_wheel) {
+            Intent intent = new Intent(this, CircleSampleActivity.class);
+            intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample);
+            startActivity(intent);
+        } else if (id == R.id.section_listview) {
+            startActivity(new Intent(this, SectionListView.class));
+        } else if (id == R.id.shake_animation_list) {
+            startActivity(new Intent(this, BlinkListView.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
