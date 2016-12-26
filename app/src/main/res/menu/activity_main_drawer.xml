@@ -71,7 +71,7 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Edit Text &amp; Spinner"/>-->
         <item
-            android:id="@+id/shake_animation_list"
+            android:id="@+id/animation_listview"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Shake Animation list"/>
      <item
