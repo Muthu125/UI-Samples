@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <!--  <item
-              android:id="@+id/ripple_effect"
-              android:icon="@drawable/ic_menu_camera"
-              android:title="Ripple Effect"/>-->
+      <!--  <item
+            android:id="@+id/ripple_effect"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Ripple Effect"/>-->
         <item
             android:id="@+id/sliding_drawer"
             android:icon="@drawable/ic_menu_gallery"
@@ -14,7 +14,10 @@
             android:id="@+id/spinner_adapter"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Spinner Adapter"/>
-
+        <item
+            android:id="@+id/section_listview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Section ListView"/>
         <item
             android:id="@+id/progress_animation"
             android:icon="@drawable/ic_menu_gallery"
@@ -64,35 +67,34 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Account Progress"/>
         <item
-            android:id="@+id/animation_listview"
+            android:id="@+id/edittext_spinner"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Edit Text &amp; Spinner"/>-->
+        <item
+            android:id="@+id/shake_animation_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Shake Animation list"/>
+     <item
+            android:id="@+id/bubble_view"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Listview Animation"/>
-        <!--  <item
-           android:id="@+id/edittext_spinner"
-           android:icon="@drawable/ic_menu_manage"
-           android:title="Edit Text &amp; Spinner"/>-->
-
-        <!--    <item
-                android:id="@+id/bubble_view"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="Bubble View"/>
-            <item
-                android:id="@+id/arc_menu"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="Arc Menu"/>-->
+            android:title="Bubble View"/>
+        <item
+            android:id="@+id/arc_menu"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Table Fixed "/>
     </group>
 
-    <!-- <item android:title="Communicate">
-         <menu>
-             <item
-                 android:id="@+id/nav_share"
-                 android:icon="@drawable/ic_menu_share"
-                 android:title="Share"/>
-             <item
-                 android:id="@+id/nav_send"
-                 android:icon="@drawable/ic_menu_send"
-                 android:title="Send"/>
-         </menu>
-     </item>-->
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>-->
 
 </menu>

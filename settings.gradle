@@ -1,1 +1,1 @@
-include ':app', ':circleMenuLib', ':circleLayout'
+include ':app', ':circleMenuLib', ':circleLayout',':library'

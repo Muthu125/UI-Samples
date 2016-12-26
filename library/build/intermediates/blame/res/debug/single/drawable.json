@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\new\\UI-Samples\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow_left.xml",
+        "source": "D:\\new\\UI-Samples\\library\\src\\main\\res\\drawable\\shadow_left.xml"
+    },
+    {
+        "merged": "D:\\new\\UI-Samples\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow_top.xml",
+        "source": "D:\\new\\UI-Samples\\library\\src\\main\\res\\drawable\\shadow_top.xml"
+    },
+    {
+        "merged": "D:\\new\\UI-Samples\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow_right.xml",
+        "source": "D:\\new\\UI-Samples\\library\\src\\main\\res\\drawable\\shadow_right.xml"
+    },
+    {
+        "merged": "D:\\new\\UI-Samples\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow_bottom.xml",
+        "source": "D:\\new\\UI-Samples\\library\\src\\main\\res\\drawable\\shadow_bottom.xml"
+    }
+]
