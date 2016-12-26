@@ -78,14 +78,14 @@
             android:id="@+id/shake_animation_list"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Shake Animation list"/>
-    <!--    <item
+     <item
             android:id="@+id/bubble_view"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Bubble View"/>
         <item
             android:id="@+id/arc_menu"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Arc Menu"/>-->
+            android:title="Table Fixed "/>
     </group>
 
    <!-- <item android:title="Communicate">

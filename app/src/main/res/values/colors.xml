@@ -19,4 +19,9 @@
     <color name="my_account_circle_green_end">#83b149</color>
     <color name="my_account_circle_red_start">#f38e3a</color>
     <color name="my_account_circle_red_end">#ea2f2e</color>
+    <color name="colorWhite">#eeeeee</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+    <color name="colorGray_light">#787c81</color>
+    <color name="colorHeaderLabelBlueColor">#859db6</color>
 </resources>

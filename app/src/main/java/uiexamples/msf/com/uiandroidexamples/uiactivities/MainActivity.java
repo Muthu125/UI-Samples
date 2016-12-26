@@ -2,9 +2,6 @@ package uiexamples.msf.com.uiandroidexamples.uiactivities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import uiexamples.msf.com.uiandroidexamples.R;
-import uiexamples.msf.com.uiandroidexamples.adapters.SampleActivity;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,8 +23,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
         //commend removed branch
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -113,6 +108,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, SectionListView.class));
         } else if (id == R.id.shake_animation_list) {
             startActivity(new Intent(this, BlinkListView.class));
+        } else if (id == R.id.arc_menu) {
+            startActivity(new Intent(this, FamilyTable.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
