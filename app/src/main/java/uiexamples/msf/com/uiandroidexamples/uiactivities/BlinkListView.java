@@ -14,7 +14,10 @@ import com.msf.ui.adapter.MSFPopulationListener;
 import com.msf.ui.textview.MSFTextView;
 import com.msf.util.statistics.MSFStatistics;
 
+import org.json.JSONException;
+
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import uiexamples.msf.com.uiandroidexamples.R;
@@ -31,6 +34,8 @@ public class BlinkListView extends Activity  {
     private LinkedList<Integer> movedPos=new LinkedList<Integer>();
     private int swipeListViewPos;
     private boolean checkSwipeAction = false;
+
+    private LinkedHashMap<Integer, View> hashMap = new LinkedHashMap<Integer, View>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +90,17 @@ public class BlinkListView extends Activity  {
                 getResources().getColor(R.color.colorAccent));*/
 
         doneTradesCommonAdapter
+                .setOnRowCreateListener(new MSFCommonAdapter.OnRowCreateListener<String>() {
+
+                    @Override
+                    public void onRowCreate(View v, int position,
+                                            String row, View[] views) {
+                        v.setOnTouchListener(gestureListener);
+
+                    }
+                });
+
+        doneTradesCommonAdapter
                 .setPopulationListener(new MSFPopulationListener<String>() {
 
                     @Override
@@ -96,7 +112,7 @@ public class BlinkListView extends Activity  {
 
 //                v.clearAnimation();
                         ((TextView)views[0]).setText(row);
-                        //hashMap.put(position, v);
+                        hashMap.put(position, v);
 
 
                         if(movedPos.size() > 0) {
@@ -123,7 +139,7 @@ public class BlinkListView extends Activity  {
         v.clearAnimation();
         //movedViews.remove(v);
 
-        //movedPos.remove((Integer)pos);
+        movedPos.remove((Integer)pos);
 
         TranslateAnimation animation = new TranslateAnimation(moveAniXWidth,
                 moveMinXWidth, 0, 0);
@@ -176,7 +192,7 @@ public class BlinkListView extends Activity  {
                 if (checkSwipeAction) {
                     swipeListViewPos = doneTradesListView.getPositionForView(v);
                    // if (!checkFilterFlag)
-                        //setUpSwipeAnimationAdpter(swipeListViewPos);
+                        setUpSwipeAnimationAdpter(swipeListViewPos);
                 }
 
                 padding = 0;
@@ -200,12 +216,59 @@ public class BlinkListView extends Activity  {
                         selectListViewAnimation(v,curPosition);
                         //showNetAmountDisplay(curPosition);
                     }
+                    if (checkFilterFlag && (!movedPos.contains(curPosition))) {
+                        selectListViewAnimation(v,curPosition);
+                    }
                     checkSwipeAction = true;
                 }
             }
             return true;
         }
     };
+
+    int swipeDoneTradeListPos;
+    boolean checkFilterFlag = false;
+    private void setUpSwipeAnimationAdpter(int swipePos) {
+
+        String rowSymbol = "";
+        double VWAP=0;
+        String data = null;
+
+        doneTradesCommonAdapter.clear();
+        doneTradesCommonAdapter.notifyDataSetChanged();
+
+        doneTradesListView.post(new Runnable() {
+
+            @Override
+            public void run() {
+                if (checkSwipeAction) {
+
+//             View v1 = doneTradesListView
+//                   .getChildAt(swipeDoneTradeListPos);
+                    View v1 = hashMap.get(swipeDoneTradeListPos);
+                    if (v1 != null) {
+                        // setPageTitle(getString(CX_MENU_DONE_TRADES) + " ("
+                        // + doneTradesCommonAdapter.getCount() + ")");
+                        selectListViewAnimation(v1,swipeDoneTradeListPos);
+                    }
+
+                    if(!movedPos.contains(swipeDoneTradeListPos)) {
+                        movedPos.add(swipeDoneTradeListPos);
+                    }
+
+                    for (int i = 0; i < doneTradesListView.getChildCount(); i++) {
+                        if (i != swipeDoneTradeListPos) {
+                            View v = doneTradesListView.getChildAt(i);
+                            remainingListViewAnimation(v,i);
+                        }
+                    }
+
+                }
+            }
+        });
+
+    }
+
 
 }
 

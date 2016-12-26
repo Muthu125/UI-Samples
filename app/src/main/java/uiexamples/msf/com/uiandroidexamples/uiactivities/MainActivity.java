@@ -93,8 +93,6 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, PolygonAnimation.class));
         } else if (id == R.id.quick_search) {
             startActivity(new Intent(this, QuickSearchAction.class));
-        } else if (id == R.id.blink_list) {
-            startActivity(new Intent(this, BlinkListView.class));
         } else if (id == R.id.chart_interval) {
             Intent intent = new Intent(this, CircleSampleActivity.class);
             intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample_fast);
@@ -107,9 +105,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, CircleSampleActivity.class);
             intent.putExtra(CircleSampleActivity.ARG_LAYOUT, R.layout.sample);
             startActivity(intent);
-        } else if (id == R.id.section_listview) {
-            startActivity(new Intent(this, SectionListView.class));
-        } else if (id == R.id.shake_animation_list) {
+        } else if (id == R.id.animation_listview) {
             startActivity(new Intent(this, BlinkListView.class));
         }
 
