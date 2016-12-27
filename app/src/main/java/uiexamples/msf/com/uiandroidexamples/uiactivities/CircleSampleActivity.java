@@ -3,6 +3,7 @@ package uiexamples.msf.com.uiandroidexamples.uiactivities;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.res.TypedArray;
 import android.graphics.RectF;
 import android.os.Build;
 import android.os.Bundle;
@@ -57,11 +58,15 @@ public class CircleSampleActivity extends Activity implements OnItemSelectedList
 
 
             final EditText edit = (EditText) findViewById(android.R.id.edit);
-
             edit.setText("112.250");
 
-
             Button btn2 = (Button) findViewById(android.R.id.button2);
+
+            int[] attrs = new int[]{R.attr.selectableItemBackground};
+            TypedArray typedArray = this.obtainStyledAttributes(attrs);
+            int backgroundResource = typedArray.getResourceId(0, 0);
+            btn2.setBackgroundResource(backgroundResource);
+
             btn2.setOnTouchListener(new View.OnTouchListener() {
                 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
                 @Override
