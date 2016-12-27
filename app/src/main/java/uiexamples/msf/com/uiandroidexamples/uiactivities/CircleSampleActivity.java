@@ -58,9 +58,7 @@ public class CircleSampleActivity extends Activity implements OnItemSelectedList
 
 
             final EditText edit = (EditText) findViewById(android.R.id.edit);
-
             edit.setText("112.250");
-
 
             Button btn2 = (Button) findViewById(android.R.id.button2);
 
