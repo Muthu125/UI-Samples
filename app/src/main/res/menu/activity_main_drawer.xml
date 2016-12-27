@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-      <!--  <item
-            android:id="@+id/ripple_effect"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Ripple Effect"/>-->
+        <!--  <item
+              android:id="@+id/ripple_effect"
+              android:icon="@drawable/ic_menu_camera"
+              android:title="Ripple Effect"/>-->
         <item
             android:id="@+id/sliding_drawer"
             android:icon="@drawable/ic_menu_gallery"
@@ -67,10 +67,6 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Account Progress"/>
         <item
-            android:id="@+id/edittext_spinner"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Edit Text &amp; Spinner"/>-->
-        <item
             android:id="@+id/animation_listview"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Shake Animation list"/>
@@ -83,20 +79,6 @@
             android:id="@+id/table_fixed_headers"
             android:icon="@drawable/ic_menu_manage"
             android:title="Table Fixed Headers"/>
-
     </group>
-
-   <!-- <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share"/>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send"/>
-        </menu>
-    </item>-->
 
 </menu>

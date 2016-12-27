@@ -11,10 +11,7 @@ import android.widget.TextView;
 
 import com.msf.ui.adapter.MSFCommonAdapter;
 import com.msf.ui.adapter.MSFPopulationListener;
-import com.msf.ui.textview.MSFTextView;
 import com.msf.util.statistics.MSFStatistics;
-
-import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -64,7 +61,7 @@ public class BlinkListView extends Activity  {
         sampleList.add("Quick view");
         sampleList.add("Readers list");
         sampleList.add("Tea time");
-        sampleList.add("Umberalla");
+        sampleList.add("Umbrella");
         sampleList.add("Version update");
         sampleList.add("xmas");
         sampleList.add("Y not");
@@ -72,9 +69,6 @@ public class BlinkListView extends Activity  {
 
         setUpListAdapter(sampleList);
     }
-
-
-    private String oldOrderId = "";
 
 
     private void setUpListAdapter(ArrayList<String> sampleList) {
@@ -85,8 +79,8 @@ public class BlinkListView extends Activity  {
         doneTradesCommonAdapter.setLayoutTextViews(
                 R.layout.filter_list_row, viewIDs);
 
-      /*  doneTradesCommonAdapter.setAlternativeRowColor(
-                getResources().getColor(R.color.my_account_bg),
+        /*doneTradesCommonAdapter.setAlternativeRowColor(
+                getResources().getColor(R.color.men),
                 getResources().getColor(R.color.colorAccent));*/
 
         doneTradesCommonAdapter
@@ -111,7 +105,7 @@ public class BlinkListView extends Activity  {
                         //  if(movedViews.contains()
 
 //                v.clearAnimation();
-                        ((TextView)views[0]).setText(row);
+
                         hashMap.put(position, v);
 
 
@@ -122,6 +116,8 @@ public class BlinkListView extends Activity  {
                                 remainingListViewAnimation(v, position);
                             }
                         }
+
+                        ((TextView)views[0]).setText(row);
                     }
 
                     @Override
@@ -156,11 +152,11 @@ public class BlinkListView extends Activity  {
         TranslateAnimation animation = new TranslateAnimation(0, moveMaxXWidth,
                 0, 0);
         //  movedViews.add(v);
-//        movedPos.add(pos);
+        movedPos.add(pos);
 
-       /* if(!movedPos.contains((Integer)pos)) {
+        if(!movedPos.contains((Integer)pos)) {
             movedPos.add(pos);
-        }*/
+        }
 
         animation.setFillAfter(true);
         animation.setDuration(100);
@@ -191,7 +187,7 @@ public class BlinkListView extends Activity  {
 
                 if (checkSwipeAction) {
                     swipeListViewPos = doneTradesListView.getPositionForView(v);
-                   // if (!checkFilterFlag)
+                    if (!checkFilterFlag)
                         setUpSwipeAnimationAdpter(swipeListViewPos);
                 }
 
@@ -234,8 +230,10 @@ public class BlinkListView extends Activity  {
         double VWAP=0;
         String data = null;
 
-        doneTradesCommonAdapter.clear();
-        doneTradesCommonAdapter.notifyDataSetChanged();
+        //doneTradesCommonAdapter.clear();
+       /* swipeDoneTradeListPos = doneTradesCommonAdapter
+                .getCount() - 1;*/
+        //doneTradesCommonAdapter.notifyDataSetChanged();
 
         doneTradesListView.post(new Runnable() {
 
@@ -247,8 +245,6 @@ public class BlinkListView extends Activity  {
 //                   .getChildAt(swipeDoneTradeListPos);
                     View v1 = hashMap.get(swipeDoneTradeListPos);
                     if (v1 != null) {
-                        // setPageTitle(getString(CX_MENU_DONE_TRADES) + " ("
-                        // + doneTradesCommonAdapter.getCount() + ")");
                         selectListViewAnimation(v1,swipeDoneTradeListPos);
                     }
 
@@ -266,7 +262,7 @@ public class BlinkListView extends Activity  {
                 }
             }
         });
-
+        doneTradesCommonAdapter.notifyDataSetChanged();
     }
 
 
