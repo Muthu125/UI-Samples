@@ -6,6 +6,7 @@
 
 
     <!--my accounts-->
+    <color name="colorBlack_With_27_Opacity">#4C000000</color>
     <color name="my_account_circle_default_rim">#444545</color>
     <color name="my_account_equity_text">#b6b6b6</color>
     <color name="my_account_header">#282a2b</color>
@@ -22,6 +23,7 @@
     <color name="colorWhite">#eeeeee</color>
     <color name="shadow_start">#80000000</color>
     <color name="shadow_end">#00000000</color>
+    <color name="blue">#001a5bff</color>
     <color name="colorGray_light">#787c81</color>
     <color name="colorHeaderLabelBlueColor">#859db6</color>
 </resources>
