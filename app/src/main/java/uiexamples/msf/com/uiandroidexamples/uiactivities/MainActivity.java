@@ -107,12 +107,17 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.table_fixed_headers) {
             startActivity(new Intent(this, FamilyTable.class));
         }
+
         else if (id == R.id.dashed_line) {
             startActivity(new Intent(this, DashedUnderlineActivity.class));
+        } else if (id == R.id.custom_dialog) {
+            startActivity(new Intent(this, CustomDialog.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 

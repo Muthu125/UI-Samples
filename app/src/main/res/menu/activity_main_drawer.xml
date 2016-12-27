@@ -74,6 +74,10 @@
             android:id="@+id/animation_listview"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Shake Animation list"/>
+        <item
+            android:id="@+id/custom_dialog"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Custom Dialog"/>
      <item
             android:id="@+id/dashed_line"
             android:icon="@drawable/ic_menu_slideshow"
