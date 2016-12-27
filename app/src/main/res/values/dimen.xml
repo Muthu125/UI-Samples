@@ -8,4 +8,5 @@
     <dimen name="dus_offset_y">2dp</dimen>
     <dimen name="dus_stroke_thickness">2dp</dimen>
     <dimen name="dus_spacing_extra">2dp</dimen>
+    <dimen name="search_height">40dp</dimen>
 </resources>
