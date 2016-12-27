@@ -75,13 +75,15 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Shake Animation list"/>
      <item
-            android:id="@+id/bubble_view"
+            android:id="@+id/dashed_line"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Bubble View"/>
+            android:title="Dashed Text"/>
+
         <item
-            android:id="@+id/arc_menu"
+            android:id="@+id/table_fixed_headers"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Table Fixed "/>
+            android:title="Table Fixed Headers"/>
+
     </group>
 
    <!-- <item android:title="Communicate">

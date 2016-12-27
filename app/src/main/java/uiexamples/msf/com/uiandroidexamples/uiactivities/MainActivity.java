@@ -104,8 +104,11 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.animation_listview) {
             startActivity(new Intent(this, BlinkListView.class));
-        } else if (id == R.id.arc_menu) {
+        } else if (id == R.id.table_fixed_headers) {
             startActivity(new Intent(this, FamilyTable.class));
+        }
+        else if (id == R.id.dashed_line) {
+            startActivity(new Intent(this, DashedUnderlineActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -4,4 +4,8 @@
     <dimen name="small_margin">4dp</dimen>
     <dimen name="small_padding">4dp</dimen>
     <dimen name="producticon_size">34dp</dimen>
+    <dimen name="dus_dash_path">2dp</dimen>
+    <dimen name="dus_offset_y">2dp</dimen>
+    <dimen name="dus_stroke_thickness">2dp</dimen>
+    <dimen name="dus_spacing_extra">2dp</dimen>
 </resources>
