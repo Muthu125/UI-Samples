@@ -158,9 +158,9 @@ public class BlinkListView extends Activity  {
         //  movedViews.add(v);
 //        movedPos.add(pos);
 
-       /* if(!movedPos.contains((Integer)pos)) {
+        if(!movedPos.contains((Integer)pos)) {
             movedPos.add(pos);
-        }*/
+        }
 
         animation.setFillAfter(true);
         animation.setDuration(100);
@@ -191,7 +191,7 @@ public class BlinkListView extends Activity  {
 
                 if (checkSwipeAction) {
                     swipeListViewPos = doneTradesListView.getPositionForView(v);
-                   // if (!checkFilterFlag)
+                    if (!checkFilterFlag)
                         setUpSwipeAnimationAdpter(swipeListViewPos);
                 }
 
@@ -234,7 +234,7 @@ public class BlinkListView extends Activity  {
         double VWAP=0;
         String data = null;
 
-        doneTradesCommonAdapter.clear();
+        //doneTradesCommonAdapter.clear();
         doneTradesCommonAdapter.notifyDataSetChanged();
 
         doneTradesListView.post(new Runnable() {
