@@ -83,6 +83,10 @@
             android:id="@+id/table_fixed_headers"
             android:icon="@drawable/ic_menu_manage"
             android:title="Table Fixed Headers"/>
+        <item
+            android:id="@+id/arc_view"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Arc View"/>
     </group>
 
 </menu>
