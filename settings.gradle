@@ -1,2 +1,1 @@
-include ':app', ':circleMenuLib', ':circleLayout',':library',':Arclibrary'
-
+include ':app', ':circleMenuLib', ':circleLayout',':library'

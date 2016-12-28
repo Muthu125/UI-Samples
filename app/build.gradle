@@ -37,8 +37,4 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.5.2'
 
     compile project(path: ':library')
-
-
-
-    compile project(path: ':Arclibrary')
 }
