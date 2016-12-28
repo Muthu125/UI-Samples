@@ -4,7 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-
+    <color name="arc_bg">#80000000</color>
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="moversbutton">#edff9602</color>
+    <color name="path_primary">#961b0b</color>
+    <color name="scrim">#42000000</color>
+    <color name="chartred">#cd282a</color>
+    <color name="arcbutbtn">#FEFCD7</color>
+    <color name="green_500">#4CAF50</color>
     <!--my accounts-->
     <color name="colorBlack_With_27_Opacity">#4C000000</color>
     <color name="my_account_circle_default_rim">#444545</color>
