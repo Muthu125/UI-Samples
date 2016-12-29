@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arc_bg">
+
+    <FrameLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/fab"
+        android:background="@android:color/transparent"
+        android:visibility="invisible">
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@id/arc_layout_Five"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            android:visibility="gone"
+            app:arc_radius="@dimen/layout_radius_path">
+
+            <LinearLayout
+                android:id="@+id/trade_Five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:arc_angle="58">
+
+                <TextView
+                    android:id="@+id/tradetxt_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Trade  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+
+                    android:id="@+id/trade_btn_Five"
+                    style="@style/Pat"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="@color/chartred"
+                    android:textSize="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Quotes_Five"
+                android:layout_marginRight=" 20dp"
+                app:arc_angle="23">
+
+                <TextView
+                    android:id="@+id/Quotes_txt_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_marginRight=" 20dp"
+                    android:padding="6dip"
+                    android:text="  Quotes  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Quotes_btn_Five"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_marginRight=" 20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="F"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Charts_Five"
+                app:arc_angle="123">
+
+                <TextView
+                    android:id="@+id/Charts_txt_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Charts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Charts_btn_Five"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="d"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Scrips_five"
+                android:layout_marginLeft=" 30dp"
+                app:arc_angle="160">
+
+                <TextView
+                    android:id="@+id/mytext4_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:layout_marginLeft=" 20dp"
+                    android:text="  My Scrips  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Scrips_btn_Five"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft=" 30dp"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="z"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Alert_Five"
+                app:arc_angle="90">
+
+                <TextView
+                    android:id="@+id/Alert_txt_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Alerts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Alert_btn_Five"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="k"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+        </com.ogaclejapan.arclayout.ArcLayout>
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@id/arc_layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            android:visibility="gone"
+            app:arc_radius="@dimen/layout_radius_path">
+
+            <LinearLayout
+                android:id="@+id/trade_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:arc_angle="73">
+
+                <TextView
+                    android:id="@+id/trade_txt_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Trade  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+
+                    android:id="@+id/trade_btn_Four"
+                    style="@style/Pat"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="@color/chartred"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Quotes_Four"
+                app:arc_angle="25">
+
+                <TextView
+                    android:id="@+id/Quotes_txt_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Quotes  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Quotes_btn_Four"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="F"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Charts_four"
+                app:arc_angle="110">
+
+                <TextView
+                    android:id="@+id/Charts_txt_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Charts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Charts_btn_Four"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="d"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Scrips_Four"
+                android:orientation="vertical"
+                app:arc_angle="160">
+
+                <TextView
+                    android:id="@+id/Scrips_txt_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Alerts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Scrips_btn_Four"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:paddingTop=" 9dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            android:visibility="gone"
+            app:arc_radius="@dimen/layout_radius_path">
+
+            <LinearLayout
+                android:id="@+id/trade_Six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:arc_angle="75">
+
+                <TextView
+                    android:id="@+id/trade_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:text="  Trade  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+
+                    android:id="@+id/trade_btn_Six"
+                    style="@style/Pat"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="@color/chartred"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Quotes_Six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:arc_angle="50">
+
+                <TextView
+                    android:id="@+id/Quotes_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_marginRight=" 15dp"
+                    android:padding="6dip"
+                    android:text="  Quotes  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Quotes_btn_Six"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:paddingTop=" 7dp"
+                    android:text="F"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Charts_Six"
+                android:orientation="vertical"
+                app:arc_angle="100">
+
+                <TextView
+                    android:id="@+id/Charts_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_marginTop=" 5dp"
+                    android:layout_marginLeft=" 3dp"
+                    android:padding="6dip"
+                    android:text="  Charts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Charts_btn_Six"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:paddingTop=" 7dp"
+                    android:text="d"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Scrips_Six"
+                android:orientation="vertical"
+                app:arc_angle="130">
+
+                <TextView
+                    android:id="@+id/Scrips_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop=" 1dp"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_marginLeft=" 15dp"
+                    android:padding=" 6dp"
+                    android:text="  My Scrips  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Scrips_btn_Six"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 25dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:paddingTop=" 2dp"
+                    android:text="z"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Alert_Six"
+                app:arc_angle="20">
+
+                <TextView
+                    android:id="@+id/Alert_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:layout_marginRight=" 30dp"
+                    android:text="  Alerts  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Alert_Btn_Six"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginLeft=" 5dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="k"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Detail_Six"
+                app:arc_angle="160">
+
+                <TextView
+                    android:id="@+id/Detail_txt_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edges"
+                    android:padding="6dip"
+                    android:layout_marginLeft=" 30dp"
+                    android:layout_marginTop=" 2dp"
+                    android:text="  Details  "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Detail_btn_Six"
+                    style="@style/Path"
+                    android:layout_width=" 35dp"
+                    android:layout_marginLeft=" 36dp"
+                    android:layout_height=" 35dp"
+                    android:layout_marginTop=" 10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_arcmenu_btn"
+                    android:text="d"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textSize=" 25dp" />
+            </LinearLayout>
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/path_fab"
+        android:paddingTop="3dp"
+        android:text="f"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/detradedsymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edges"
+        android:padding="8dip"
+        android:text="  Trading Symbol  "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>
