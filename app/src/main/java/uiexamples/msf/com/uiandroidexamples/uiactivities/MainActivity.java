@@ -114,6 +114,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, DashedUnderlineActivity.class));
         } else if (id == R.id.custom_dialog) {
             startActivity(new Intent(this, CustomDialog.class));
+        }else if (id == R.id.arc_view) {
+            startActivity(new Intent(this, ArcViewActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

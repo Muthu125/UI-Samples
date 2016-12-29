@@ -26,4 +26,18 @@
     <color name="blue">#001a5bff</color>
     <color name="colorGray_light">#787c81</color>
     <color name="colorHeaderLabelBlueColor">#859db6</color>
+
+    <color name="arc_bg">#80000000</color>
+       <color name="cardview_dark_background">#FF424242</color>
+       <color name="moversbutton">#edff9602</color>
+       <color name="path_primary">#961b0b</color>
+       <color name="scrim">#42000000</color>
+       <color name="chartred">#cd282a</color>
+       <color name="arcbutbtn">#FEFCD7</color>
+       <color name="green_500">#4CAF50</color>
+    <color name="toolbar">#730501</color>
+    <color name="btncolour">#FFFF7702</color>
+    <color name="btnpass">#79cc05</color>
+    <color name="btnfalse">#ececec</color>
+    <color name="path_orange">#FF9500</color>
 </resources>

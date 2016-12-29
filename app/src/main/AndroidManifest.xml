@@ -38,6 +38,7 @@
         <activity android:name=".uiactivities.FamilyTable" />
         <activity android:name=".uiactivities.DashedUnderlineActivity" />
         <activity android:name=".uiactivities.CustomDialog" />
+        <activity android:name=".uiactivities.ArcViewActivity" />
     </application>
 
 </manifest>
